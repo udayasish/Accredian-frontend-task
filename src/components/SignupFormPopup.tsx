@@ -54,7 +54,7 @@ const SignupFormPopup: React.FC<SignupFormPopupProps> = ({ isVisible, onClose })
       if (response.ok) {
         console.log("Referral submitted successfully and email sent");
         setShowSuccessMessage(true);
-        // onClose(); // Close the popup after successful submission
+        
       } else {
         const errorData = await response.json();
         console.error("Failed to submit referral:", errorData);
