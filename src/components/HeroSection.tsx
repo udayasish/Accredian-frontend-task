@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 import { Spotlight } from "./ui/Spotlight";
 import { Button } from "./ui/moving-border";
-import SignupFormPopup from "./SignupFormPopup";  // Import the SignupFormPopup component
+import SignupFormPopup from "./SignupFormPopup"; 
 import Image from 'next/image';
 
 const HeroSection: React.FC = () => {
@@ -24,6 +24,7 @@ const HeroSection: React.FC = () => {
       <div className="flex items-center p-16 rounded-lg relative">
         <div className="flex-1 relative top-[3rem] left-[12rem]">
           <h1 className="text-6xl font-bold mb-4">Let&apos;s Learn</h1>
+          
           <h2 className="text-6xl font-bold mb-4"> & Earn</h2>
           <p className="text-xl mt-8">Get a chance to win</p>
           <p className="text-xl mb-14">
