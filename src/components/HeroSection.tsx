@@ -1,13 +1,11 @@
 "use client"
 
-
-
-
 import React, { useState } from 'react';
-import Link from "next/link";
+
 import { Spotlight } from "./ui/Spotlight";
 import { Button } from "./ui/moving-border";
 import SignupFormPopup from "./SignupFormPopup";  // Import the SignupFormPopup component
+import Image from 'next/image';
 
 const HeroSection: React.FC = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -25,7 +23,7 @@ const HeroSection: React.FC = () => {
       <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
       <div className="flex items-center p-16 rounded-lg relative">
         <div className="flex-1 relative top-[3rem] left-[12rem]">
-          <h1 className="text-6xl font-bold mb-4">Let's Learn</h1>
+          <h1 className="text-6xl font-bold mb-4">Let&apos;s Learn</h1>
           <h2 className="text-6xl font-bold mb-4"> & Earn</h2>
           <p className="text-xl mt-8">Get a chance to win</p>
           <p className="text-xl mb-14">
@@ -40,7 +38,7 @@ const HeroSection: React.FC = () => {
           </Button>
         </div>
         <div className="flex-1 relative top-[3rem] right-[4rem]">
-          <img src="/refer_earn.png" alt="Students with smartphone" className="w-full h-auto" />
+          <Image src="/refer_earn.png" alt="Students with smartphone" className="w-full h-auto" />
         </div>
       </div>
       <SignupFormPopup isVisible={isPopupVisible} onClose={handlePopupClose} />
@@ -49,4 +47,3 @@ const HeroSection: React.FC = () => {
 }
 
 export default HeroSection;
-
