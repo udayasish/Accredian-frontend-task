@@ -43,7 +43,8 @@ const SignupFormPopup: React.FC<SignupFormPopupProps> = ({ isVisible, onClose })
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://accredian-backend-task-c7o2.onrender.com/api/referrals', {
+      // const response = await fetch('https://accredian-backend-task-c7o2.onrender.com/api/referrals', {
+      const response = await fetch('http://localhost:8000/api/referrals', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
