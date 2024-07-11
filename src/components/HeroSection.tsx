@@ -8,6 +8,7 @@ import Link from "next/link";
 import { Spotlight } from "./ui/Spotlight";
 import { Button } from "./ui/moving-border";
 import SignupFormPopup from "./SignupFormPopup";  // Import the SignupFormPopup component
+import Image from 'next/image';
 
 const HeroSection: React.FC = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -40,7 +41,7 @@ const HeroSection: React.FC = () => {
           </Button>
         </div>
         <div className="flex-1 relative top-[3rem] right-[4rem]">
-          <img src="/refer_earn.png" alt="Students with smartphone" className="w-full h-auto" />
+          <Image src="/refer_earn.png" alt="Students with smartphone" className="w-full h-auto" />
         </div>
       </div>
       <SignupFormPopup isVisible={isPopupVisible} onClose={handlePopupClose} />
